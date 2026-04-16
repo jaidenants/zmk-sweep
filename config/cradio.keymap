@@ -88,8 +88,8 @@
             bindings = <
 &kp ESC    &kp TAB    &kp LA(TAB)  &kp LG(TAB)  &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
 &trans     &trans     &trans       &trans       &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &to 2          &to 3
-                                   &to 2        &kp LCTRL    &to 0         &to 2
+&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &to 4          &to 3
+                                   &to 2        &kp LCTRL    &to 0         &to 4
             >;
         };
 
@@ -115,10 +115,10 @@
 
         symbols_2_layer {
             bindings = <
-&kp IT_CARET  &kp IT_UNDER  &kp IT_PND   &kp IT_EUR   &kp IT_HASH    &none  &none  &none  &none  &none
-&kp IT_BKTK   &kp IT_TILDE  &kp IT_BSLH  &kp IT_PIPE  &kp IT_AND     &none  &none  &none  &none  &none
-&none         &none         &kp IT_SECT  &kp IT_CCED  &kp IT_DEG     &none  &none  &none  &none  &none
-                                         &none        &none          &none  &none
+&kp IT_CARET  &kp IT_UNDER     &kp IT_PND   &kp IT_EUR   &kp IT_HASH    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
+&kp IT_BKTK   &kp C_VOLUME_UP  &kp IT_BSLH  &kp IT_PIPE  &kp IT_AND     &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&none         &none            &kp IT_SECT  &kp IT_CCED  &kp IT_DEG     &none           &none           &none           &none            &none
+                                            &none        &none          &to 0           &none
             >;
         };
 
