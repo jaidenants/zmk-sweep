@@ -91,7 +91,7 @@
 &trans     &trans     &trans     &trans     &trans         &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
 &trans     &trans     &trans     &trans     &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
-                                 &trans     &mo SYM2       &to 0           &to 2
+                                 &trans     &trans         &to 0           &to 2
             >;
         };
 
@@ -110,10 +110,10 @@
 
         fnc_layer {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5    &kp F6        &kp F7  &kp F8  &kp F9  &kp F10
-&kp NUMBER_1  &sk NUMBER_2  &sk NUMBER_3  &sk NUMBER_4  &kp N5    &kp NUMBER_6  &kp N8  &kp N9  &kp N0  &kp MINUS
-&none         &none         &none         &none         &none     &kp EQUAL     &none   &trans  &trans  &trans
-                                          &none         &none     &to 0         &none
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5       &kp F6        &kp F7    &kp F8  &kp F9  &kp F10
+&kp NUMBER_1  &sk NUMBER_2  &sk NUMBER_3  &sk NUMBER_4  &kp N5       &kp NUMBER_6  &kp N8    &kp N9  &kp N0  &kp MINUS
+&none         &none         &none         &none         &none        &kp EQUAL     &kp PLUS  &trans  &trans  &trans
+                                          &none         &kp LSHFT    &to 0         &none
             >;
         };
 
