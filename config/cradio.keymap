@@ -76,32 +76,32 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp E           &kp R        &kp T      &kp Y      &kp U        &kp I            &kp O       &kp P
-&mt RCTRL A  &mt LCMD S  &mt LEFT_ALT D  &mt LSHFT F  &kp G      &kp H      &mt RSHFT J  &mt RIGHT_ALT K  &mt RCMD L  &mt RCTRL SEMICOLON
-&kp Z        &kp X       &kp C           &kp V        &kp B      &kp N      &kp M        &kp COMMA        &kp DOT     &kp SLASH
-                                         &kp DELETE   &kp TAB    &kp SPACE  &to 1
+&kp Q        &kp W       &kp E           &kp R        &kp T        &kp Y      &kp U        &kp I            &kp O       &kp P
+&mt RCTRL A  &mt LCMD S  &mt LEFT_ALT D  &mt LSHFT F  &kp G        &kp H      &mt RSHFT J  &mt RIGHT_ALT K  &mt RCMD L  &mt RCTRL SEMICOLON
+&kp Z        &kp X       &kp C           &kp V        &kp B        &kp N      &kp M        &kp COMMA        &kp DOT     &kp SLASH
+                                         &kp DELETE   &kp ENTER    &kp SPACE  &to 1
             >;
         };
 
         // Numbers and high frequency symbols
 
-        nav_layer {
+        mouse_layer {
             bindings = <
 &trans        &trans       &trans       &trans       &trans         &trans      &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans
 &trans        &trans       &trans       &trans       &kp IT_LBKT    &kp IT_EQL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp IT_AST
 &kp IT_GREAT  &kp IT_PERC  &kp IT_RPAR  &kp IT_RBRC  &kp IT_RBKT    &kp IT_AT   &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
-                                        &trans       &mo SYM2       &to 0       &trans
+                                        &trans       &mo SYM2       &to 0       &to 2
             >;
         };
 
         // Main modifiers and arrow keys
 
-        ext_layer {
+        nav_layer {
             bindings = <
-&kp ESC    &trans     &trans      &trans     &trans       &kp PG_UP     &kp HOME  &kp UP    &kp END    &kp CAPS
-&sk LALT   &sk LGUI   &sk LSHIFT  &sk LCTRL  &kp RALT     &kp PG_DN     &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp TAB    &kp LC(V)    &kp LC(BSPC)  &kp BSPC  &trans    &trans     &trans
-                                  &trans     &kp LCTRL    &kp ENTER     &mo FNC
+&kp ESC    &trans     &trans     &trans     &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
+&trans     &trans     &trans     &trans     &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &trans         &trans
+                                 &trans     &kp LCTRL    &kp ENTER     &mo FNC
             >;
         };
 
