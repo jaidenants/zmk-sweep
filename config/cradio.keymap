@@ -25,10 +25,11 @@
 // -----------------
 
 &mt {
-    //  flavor = "tap-preferred";
-    // tapping_term_ms = <300>;
-    // quick-tap-ms = <175>;
+    tapping-term-ms = <500>;
+    quick-tap-ms = <175>;
+    flavor = "tap-preferred";
 };
+
 
 &sk { ignore-modifiers; };
 
