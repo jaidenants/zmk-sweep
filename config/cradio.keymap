@@ -90,7 +90,7 @@
             bindings = <
 &kp ESC    &kp TAB    &kp LC(TAB)  &kp LG(TAB)  &trans      &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
 &trans     &trans     &trans       &trans       &kp RALT    &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V       &kp LC(BSPC)  &kp BSPC   &trans    &trans         &to 3
+&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V       &kp LG(BSPC)  &kp BSPC   &trans    &trans         &to 3
                                    &trans       &trans      &to 0         &to 2
             >;
         };
