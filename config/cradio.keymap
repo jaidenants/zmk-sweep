@@ -50,7 +50,7 @@
         combo_accent {
             timeout-ms = <300>;
             key-positions = <32 33>;
-            bindings = <&mo ACCENT>;
+            bindings = <&mo 5>;
         };
 
         // internal-left & external-right thumb keys
@@ -58,7 +58,7 @@
         combo_sym2 {
             timeout-ms = <200>;
             key-positions = <31 33>;
-            bindings = <&mo SYM2>;
+            bindings = <&mo 4>;
         };
 
         // both left thumb keys
@@ -66,7 +66,7 @@
         combo_settings {
             timeout-ms = <300>;
             key-positions = <30 31>;
-            bindings = <&mo SETTINGS>;
+            bindings = <&mo 6>;
         };
     };
 
@@ -80,33 +80,29 @@
 &mt ESC Q    &kp W       &kp E           &kp R          &kp T          &kp Y      &kp U        &kp I            &kp O       &kp P
 &mt RCTRL A  &mt LCMD S  &mt LEFT_ALT D  &mt LSHFT F    &kp G          &kp H      &mt RSHFT J  &mt RIGHT_ALT K  &mt RCMD L  &mt RCTRL SEMICOLON
 &kp Z        &kp X       &kp C           &kp V          &kp B          &kp N      &kp M        &kp COMMA        &kp DOT     &kp SLASH
-                                         &kp BACKSPACE  &lt 3 ENTER    &kp SPACE  &to 2
+                                         &kp BACKSPACE  &lt 3 ENTER    &kp SPACE  &to 1
             >;
         };
 
-        // Numbers and high frequency symbols
+        nav_layer {
+            bindings = <
+&kp ESC    &kp TAB    &kp LA(TAB)  &kp LG(TAB)  &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
+&trans     &trans     &trans       &trans       &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
+&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &to 2          &to 3
+                                   &to 2        &kp LCTRL    &to 0         &to 2
+            >;
+        };
 
         moe_layer {
             bindings = <
 &trans     &trans     &trans     &trans     &trans         &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
 &trans     &trans     &trans     &trans     &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
 &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
-                                 &trans     &trans         &to 0           &to 2
+                                 &trans     &trans         &to 0           &to 1
             >;
+
+            label = "1";
         };
-
-        // Main modifiers and arrow keys
-
-        nav_layer {
-            bindings = <
-&kp ESC    &kp TAB    &kp LA(TAB)  &kp LG(TAB)  &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
-&trans     &trans     &trans       &trans       &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &to 1          &to 3
-                                   &to 1        &kp LCTRL    &to 0         &to 1
-            >;
-        };
-
-        // Function keys with modifiers
 
         fnc_layer {
             bindings = <
@@ -117,8 +113,6 @@
             >;
         };
 
-        // Low frequency symbols.
-
         symbols_2_layer {
             bindings = <
 &kp IT_CARET  &kp IT_UNDER  &kp IT_PND   &kp IT_EUR   &kp IT_HASH    &none  &none  &none  &none  &none
@@ -128,8 +122,6 @@
             >;
         };
 
-        // Used to type regional accents.
-
         accent_layer {
             bindings = <
 &none        &none        &none        &kp IT_CEGR  &none          &none  &none  &none  &none  &none
@@ -138,8 +130,6 @@
                                        &none        &none          &none  &none
             >;
         };
-
-        // Used to change the keyboard's settings.
 
         settings_layer {
             bindings = <
