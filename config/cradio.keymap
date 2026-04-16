@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include "keymap_italian.h"
 
 // Layer definitions
@@ -76,10 +77,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp E           &kp R        &kp T        &kp Y      &kp U        &kp I            &kp O       &kp P
-&mt RCTRL A  &mt LCMD S  &mt LEFT_ALT D  &mt LSHFT F  &kp G        &kp H      &mt RSHFT J  &mt RIGHT_ALT K  &mt RCMD L  &mt RCTRL SEMICOLON
-&kp Z        &kp X       &kp C           &kp V        &kp B        &kp N      &kp M        &kp COMMA        &kp DOT     &kp SLASH
-                                         &kp DELETE   &kp ENTER    &kp SPACE  &to 1
+&mt ESC Q    &kp W       &kp E           &kp R        &kp T          &kp Y      &kp U        &kp I            &kp O       &kp P
+&mt RCTRL A  &mt LCMD S  &mt LEFT_ALT D  &mt LSHFT F  &kp G          &kp H      &mt RSHFT J  &mt RIGHT_ALT K  &mt RCMD L  &mt RCTRL SEMICOLON
+&kp Z        &kp X       &kp C           &kp V        &kp B          &kp N      &kp M        &kp COMMA        &kp DOT     &kp SLASH
+                                         &kp DELETE   &lt 3 ENTER    &kp SPACE  &to 2
             >;
         };
 
@@ -87,10 +88,10 @@
 
         mouse_layer {
             bindings = <
-&trans        &trans       &trans       &trans       &trans         &trans      &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans
-&trans        &trans       &trans       &trans       &kp IT_LBKT    &kp IT_EQL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp IT_AST
-&kp IT_GREAT  &kp IT_PERC  &kp IT_RPAR  &kp IT_RBRC  &kp IT_RBKT    &kp IT_AT   &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
-                                        &trans       &mo SYM2       &to 0       &to 2
+&trans     &trans     &trans     &trans     &trans         &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
+&trans     &trans     &trans     &trans     &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
+                                 &trans     &mo SYM2       &to 0           &to 2
             >;
         };
 
@@ -101,7 +102,7 @@
 &kp ESC    &trans     &trans     &trans     &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
 &trans     &trans     &trans     &trans     &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &trans         &trans
-                                 &trans     &kp LCTRL    &kp ENTER     &mo FNC
+                                 &trans     &kp LCTRL    &to 0         &mo FNC
             >;
         };
 
@@ -109,10 +110,10 @@
 
         fnc_layer {
             bindings = <
-&kp F1    &kp F2    &kp F3      &kp F4     &kp F5      &kp F6   &kp F7   &kp F8           &kp F9  &kp F10
-&sk LALT  &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT    &kp F11  &kp F12  &kp PRINTSCREEN  &trans  &trans
-&none     &none     &none       &none      &none       &none    &none    &none            &none   &none
-                                &none      &none       &none    &none
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5    &kp F6        &kp F7  &kp F8  &kp F9  &kp F10
+&kp NUMBER_1  &sk NUMBER_2  &sk NUMBER_3  &sk NUMBER_4  &kp N5    &kp NUMBER_6  &kp N8  &kp N9  &kp N0  &kp MINUS
+&none         &none         &none         &none         &none     &kp EQUAL     &none   &trans  &trans  &trans
+                                          &none         &none     &to 0         &none
             >;
         };
 
