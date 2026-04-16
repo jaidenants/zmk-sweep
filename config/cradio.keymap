@@ -97,7 +97,7 @@
 
         moe_layer {
             bindings = <
-&trans     &kp TAB    &kp LC(TAB)  &kp LG(TAB)  &trans         &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
+&trans     &kp TAB    &kp LC(TAB)  &kp LG(TAB)  &trans         &none           &msc SCRL_UP    &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
 &trans     &trans     &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
 &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
                                    &trans       &trans         &to 0           &to 1
