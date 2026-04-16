@@ -1,11 +1,13 @@
 manifest:
+  defaults:
+    revision: v0.3  # <-- Pinning to v0.3 is the key
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3  # <-- Change this from 'main' or 'stable' to 'v0.3'
       import: app/west.yml
   self:
     path: config
