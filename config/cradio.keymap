@@ -99,10 +99,10 @@
 
         nav_layer {
             bindings = <
-&kp ESC    &trans     &trans     &trans     &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
-&trans     &trans     &trans     &trans     &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &trans         &trans
-                                 &trans     &kp LCTRL    &to 0         &to 1
+&kp ESC    &kp TAB    &kp LA(TAB)  &kp LC(TAB)  &trans       &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
+&trans     &trans     &trans       &trans       &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
+&kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)    &kp V        &kp LC(BSPC)  &kp BSPC   &trans    &trans         &trans
+                                   &trans       &kp LCTRL    &to 0         &to 1
             >;
         };
 
