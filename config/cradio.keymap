@@ -52,7 +52,7 @@
         combo_accent {
             timeout-ms = <300>;
             key-positions = <32 33>;
-            bindings = <&mo 5>;
+            bindings = <&mo 4>;
         };
 
         // internal-left & external-right thumb keys
@@ -60,7 +60,7 @@
         combo_sym2 {
             timeout-ms = <300>;
             key-positions = <31 33>;
-            bindings = <&mo 4>;
+            bindings = <&mo 0>;
         };
 
         // both left thumb keys
@@ -68,7 +68,7 @@
         combo_settings {
             timeout-ms = <300>;
             key-positions = <30 31>;
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
         };
     };
 
@@ -88,19 +88,19 @@
 
         nav_layer {
             bindings = <
-&kp ESC    &kp TAB    &kp LC(TAB)  &kp LG(TAB)  &trans      &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
-&trans     &trans     &trans       &trans       &kp RALT    &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp V       &kp LG(BSPC)  &kp BSPC   &trans    &trans         &to 3
-                                   &trans       &trans      &to 0         &to 2
+&kp ESC    &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(TAB)  &kp TAB     &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
+&trans     &trans           &trans       &trans       &kp RALT    &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
+&kp LG(Z)  &kp LG(X)        &kp LG(C)    &kp LG(V)    &kp V       &kp LG(BSPC)  &kp GRAVE  &trans    &trans         &to 3
+                                         &trans       &trans      &to 0         &to 2
             >;
         };
 
         moe_layer {
             bindings = <
-&trans     &kp TAB    &kp LC(TAB)  &kp LG(TAB)  &trans         &none           &msc SCRL_UP    &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
-&trans     &trans     &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &kp IT_FSLH
-                                   &trans       &trans         &to 0           &to 1
+&trans     &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(TAB)  &kp TAB        &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp RCLK
+&trans     &trans           &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&kp LG(Z)  &kp LG(X)        &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &to 3
+                                         &trans       &trans         &to 0           &to 1
             >;
 
             label = "1";
@@ -110,26 +110,17 @@
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4                    &kp F5    &kp F6        &kp F7     &kp F8  &kp F9  &kp F10
 &kp NUMBER_1  &sk NUMBER_2  &sk NUMBER_3  &sk NUMBER_4              &kp N5    &kp NUMBER_6  &kp N7     &kp N8  &kp N9  &kp N0
-&none         &none         &none         &none                     &none     &kp PLUS      &kp MINUS  &trans  &trans  &trans
+&to 4         &to 5         &none         &none                     &none     &kp PLUS      &kp MINUS  &trans  &trans  &trans
                                           &mt LEFT_SHIFT BACKSPACE  &trans    &to 0         &to 1
             >;
         };
 
-        symbols_2_layer {
+        extra {
             bindings = <
-&kp IT_CARET  &kp IT_UNDER     &kp IT_PND   &kp IT_EUR   &kp IT_HASH    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN
-&kp IT_BKTK   &kp C_VOLUME_UP  &kp IT_BSLH  &kp IT_PIPE  &kp IT_AND     &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none         &none            &kp IT_SECT  &kp IT_CCED  &kp IT_DEG     &none           &none           &none           &none            &none
-                                            &none        &none          &to 0           &none
-            >;
-        };
-
-        accent_layer {
-            bindings = <
-&none        &none        &none        &kp IT_CEGR  &none          &none  &none  &none  &none  &none
-&kp IT_AGRV  &kp IT_IGRV  &kp IT_OGRV  &kp IT_EGRV  &kp IT_EACU    &none  &none  &none  &none  &none
-&none        &none        &none        &kp IT_UGRV  &none          &none  &none  &none  &none  &none
-                                       &none        &none          &none  &none
+&none        &none        &none        &kp IT_CEGR  &none          &none  &kp C_VOLUME_UP  &none  &kp C_VOL_DN  &none
+&kp IT_AGRV  &kp IT_IGRV  &kp IT_OGRV  &kp IT_EGRV  &kp IT_EACU    &none  &none            &none  &none         &none
+&none        &none        &none        &kp IT_UGRV  &none          &none  &none            &none  &none         &none
+                                       &trans       &trans         &to 0  &to 1
             >;
         };
 
