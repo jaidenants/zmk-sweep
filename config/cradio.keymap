@@ -24,10 +24,7 @@
 
 // -----------------
 
-&mt {
-    tapping-term-ms = <280>;
-    flavor = "tap-preferred";
-};
+&mt { flavor = "tap-preferred"; };
 
 / {
     macros {
