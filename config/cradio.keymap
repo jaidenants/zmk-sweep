@@ -77,10 +77,10 @@
 
         nav_layer {
             bindings = <
-&kp ESC    &trans     &kp LC(TAB)  &kp LG(TAB)  &kp TAB      &trans        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
-&trans     &trans     &trans       &trans       &kp RALT     &trans        &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)    &kp GRAVE    &kp LG(BSPC)  &kp SQT    &trans    &trans         &trans
-                                   &trans       &trans       &to 0         &to 2
+&kp ESC    &trans     &kp LC(TAB)  &kp LG(TAB)  &kp TAB      &trans     &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp CAPS
+&trans     &trans     &trans       &trans       &kp RALT     &trans     &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
+&kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)    &kp GRAVE    &kp EQUAL  &kp SQT    &trans    &trans         &trans
+                                   &trans       &trans       &to 0      &to 2
             >;
         };
 
@@ -88,7 +88,7 @@
             bindings = <
 &trans     &trans     &kp LC(TAB)  &kp LG(TAB)  &kp TAB        &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp RCLK
 &trans     &trans     &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp IT_AT       &kp IT_EXCL     &kp IT_DQUOT    &kp IT_PLUS      &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp EQUAL       &kp SQT         &kp IT_DQUOT    &kp IT_PLUS      &trans
                                    &trans       &trans         &to 0           &to 1
             >;
 
