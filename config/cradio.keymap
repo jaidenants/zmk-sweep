@@ -68,7 +68,7 @@
 
         default_layer {
             bindings = <
-&mt ESC Q    &kp W       &kp E           &kp R          &kp T          &kp Y      &kp U        &kp I            &kp O       &kp P
+&mt ESC Q    &kp W       &kp E           &mt TAB R      &kp T          &kp Y      &kp U        &kp I            &kp O       &kp P
 &mt RCTRL A  &mt LCMD S  &mt LEFT_ALT D  &mt LSHFT F    &kp G          &kp H      &mt RSHFT J  &mt RIGHT_ALT K  &mt RCMD L  &mt RCTRL SEMICOLON
 &kp Z        &kp X       &kp C           &kp V          &kp B          &kp N      &kp M        &kp COMMA        &kp DOT     &kp SLASH
                                          &kp BACKSPACE  &lt 3 ENTER    &kp SPACE  &to 1
@@ -86,10 +86,10 @@
 
         moe_layer {
             bindings = <
-&trans     &trans     &kp LC(TAB)  &kp LG(TAB)  &kp TAB        &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp RCLK
-&trans     &trans     &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp EQUAL       &kp SQT         &kp IT_DQUOT    &kp IT_PLUS      &trans
-                                   &trans       &trans         &to 0           &to 1
+&trans     &trans     &kp LC(TAB)  &kp LG(TAB)  &kp TAB        &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp RCLK
+&trans     &trans     &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp EQUAL        &kp SQT         &kp IT_DQUOT    &kp IT_PLUS      &trans
+                                   &trans       &trans         &to 0            &to 1
             >;
 
             label = "1";
