@@ -86,10 +86,10 @@
 
         moe_layer {
             bindings = <
-&trans     &trans     &kp LC(TAB)  &kp LG(TAB)  &kp TAB        &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp RCLK
-&trans     &trans     &trans       &trans       &kp IT_LBKT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
-&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)    &kp IT_RBKT    &kp EQUAL        &kp SQT         &kp IT_DQUOT    &kp IT_PLUS      &trans
-                                   &trans       &trans         &to 0            &to 1
+&trans     &trans     &kp LC(TAB)  &kp TAB    &kp TAB        &msc SCRL_RIGHT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &mkp RCLK
+&trans     &trans     &trans       &trans     &kp IT_LBKT    &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &kp IT_RBKT    &kp EQUAL        &kp SQT         &kp IT_DQUOT    &kp IT_PLUS      &trans
+                                   &trans     &trans         &to 0            &to 1
             >;
 
             label = "1";
