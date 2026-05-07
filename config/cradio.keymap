@@ -58,6 +58,11 @@
             bindings = <&to 4>;
         };
 
+        Mouse {
+            bindings = <&to 2>;
+            key-positions = <18 19>;
+        };
+
         // both left thumb keys
     };
 
@@ -80,7 +85,7 @@
 &kp ESC    &trans     &kp LC(TAB)  &kp TAB    &kp TAB      &trans     &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp LG(BACKSPACE)
 &trans     &trans     &trans       &trans     &kp RALT     &trans     &kp LEFT   &kp DOWN  &kp RIGHT      &kp DEL
 &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp GRAVE    &kp EQUAL  &kp SQT    &trans    &trans         &trans
-                                   &trans     &trans       &to 0      &to 2
+                                   &trans     &trans       &to 0      &none
             >;
         };
 
