@@ -35,6 +35,20 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
         };
+
+        AAgrave: AAgrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "AAGRAVE";
+        };
+
+        Egrave: Egrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp E>;
+            label = "EGRAVE";
+        };
     };
 
     combos {
@@ -100,19 +114,19 @@
 
         fnc_layer {
             bindings = <
-&mt ESC F1    &kp F2        &kp F3        &mt TAB F4                &kp F5    &kp F6        &kp F7     &kp F8  &kp F9  &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4              &kp N5    &kp NUMBER_6  &kp N7     &kp N8  &kp N9  &kp N0
-&kp F12       &kp F11       &kp RA(COMMA)   &kp RA(E)               &none     &kp PLUS      &kp MINUS  &trans  &trans  &trans
-                                          &mt LEFT_SHIFT BACKSPACE  &trans    &to 0         &to 1
+&mt ESC F1    &kp F2        &kp F3         &mt TAB F4                &kp F5      &kp F6        &kp F7     &kp F8  &kp F9  &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4              &kp N5      &kp NUMBER_6  &kp N7     &kp N8  &kp N9  &kp N0
+&kp F12       &kp F11       &kp RA(COMMA)  &kp RA(E)                 &AAgrave    &kp PLUS      &kp MINUS  &trans  &trans  &trans
+                                           &mt LEFT_SHIFT BACKSPACE  &trans      &to 0         &to 1
             >;
         };
 
         extra {
             bindings = <
-&none        &none        &none        &sys_reset   &none          &kp C_BRI_UP  &kp C_VOLUME_UP  &none  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC
-&none  &none   &none   &none   &none     &none         &none            &none  &none         &none
-&none        &none        &none        &none   &none          &none         &none            &none  &none         &none
-                                       &trans       &trans         &to 0         &to 1
+&none  &none  &none  &sys_reset  &none     &kp C_BRI_UP  &kp C_VOLUME_UP  &none  &kp C_VOL_DN  &kp C_BRIGHTNESS_DEC
+&none  &none  &none  &none       &none     &none         &none            &none  &none         &none
+&none  &none  &none  &none       &none     &none         &none            &none  &none         &none
+                     &trans      &trans    &to 0         &to 1
             >;
         };
     };
