@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "keymap_italian.h"
 
 // Layer definitions
 
@@ -103,7 +102,7 @@
             bindings = <
 &mt ESC F1    &kp F2        &kp F3        &mt TAB F4                &kp F5    &kp F6        &kp F7     &kp F8  &kp F9  &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4              &kp N5    &kp NUMBER_6  &kp N7     &kp N8  &kp N9  &kp N0
-&kp F12       &kp F11       &kp IT_CCED   &kp IT_EACU               &none     &kp PLUS      &kp MINUS  &trans  &trans  &trans
+&kp F12       &kp F11       &kp RA(COMMA)   &kp RA(E)               &none     &kp PLUS      &kp MINUS  &trans  &trans  &trans
                                           &mt LEFT_SHIFT BACKSPACE  &trans    &to 0         &to 1
             >;
         };
