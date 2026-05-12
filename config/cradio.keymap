@@ -43,11 +43,11 @@
             label = "eaigue";
         };
 
-        ccde: Egrave {
+        ccde: ccde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp C>;
-            label = "EGRAVE";
+            label = "ccde";
         };
 
         agrave: agrave {
