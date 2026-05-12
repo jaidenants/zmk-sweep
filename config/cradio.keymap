@@ -36,11 +36,11 @@
             bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
         };
 
-        eaigue: AAgrave {
+        eaigue: eaigue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp E>;
-            label = "AAGRAVE";
+            label = "eaigue";
         };
 
         ccde: Egrave {
@@ -50,18 +50,18 @@
             label = "EGRAVE";
         };
 
+        agrave: agrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "AGRAVE";
+        };
+
         egrave: egrave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp E>;
             label = "EGRAVE";
-        };
-
-        aagrave: aagrave {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp A>;
-            label = "AAGRAVE";
         };
     };
 
@@ -128,10 +128,10 @@
 
         fnc_layer {
             bindings = <
-&mt ESC F1    &kp F2        &kp F3        &mt TAB F4                &kp F5      &kp F6        &kp F7     &kp F8  &kp F9  &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4              &kp N5      &kp NUMBER_6  &kp N7     &kp N8  &kp N9  &kp N0
-&kp F12       &kp F11       &ccde         &eaigue                   &aagrave    &kp PLUS      &kp MINUS  &trans  &trans  &trans
-                                          &mt LEFT_SHIFT BACKSPACE  &trans      &to 0         &to 1
+&mt ESC F1    &kp F2        &kp F3        &mt TAB F4                &kp F5     &kp F6        &kp F7     &kp F8  &kp F9  &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4              &kp N5     &kp NUMBER_6  &kp N7     &kp N8  &kp N9  &kp N0
+&kp F12       &kp F11       &ccde         &eaigue                   &agrave    &kp PLUS      &kp MINUS  &trans  &trans  &trans
+                                          &mt LEFT_SHIFT BACKSPACE  &trans     &to 0         &to 1
             >;
         };
 
