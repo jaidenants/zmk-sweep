@@ -60,7 +60,7 @@
         aagrave: aagrave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp GRAVE &kp A>;
+            bindings = <&kp GRAVE &kp A>;
             label = "AAGRAVE";
         };
     };
